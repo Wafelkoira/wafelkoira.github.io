@@ -36,7 +36,7 @@
   
         body {
           font-family: "Ubuntu", serif;
-
+          background-image: url('/images/blockfall.png');
         }
   
         div {
@@ -80,11 +80,46 @@
         .footer {
           position: absolute;
           right: 0;
-          bottom: 0;
           left: 0;
           padding: 1rem;
           background-color: rgb(47, 53, 60);
           text-align: center;
+        }
+
+        .topper {
+          position: absolute;
+          right: 0;
+          left: 0;
+          padding: 1rem;
+          background-color: rgb(47, 53, 60);
+          text-align: center;
+        }
+
+        .discription {
+          position: absolute;
+          top: 50px;
+        }
+
+        .button {
+          background-color: rgb(159, 187, 247);
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border: none;
+          transition-duration: 0.4s;
+          border-radius: 12px;
+        }
+
+        .button:hover {
+          background-color: whitesmoke;
+          color: black;
+        }
+
+        .topbuttons {
+          position: relative;
+          top: 10px;
         }
 
       </style>
@@ -93,63 +128,62 @@
 
   <body>
 
-    <div vertical-align="middle" style="margin: 0 auto;" class="topnav">
-        <a onclick="window.location.href='/';">Home</a>
-        <a onclick="window.location.href='/projects';">Projects</a>
-        <a onclick="window.location.href='/contact';">Contact</a>
-        <input
+    <div style="top: -20px;" class="topper" style="color: whitesmoke">
+      <a onclick="window.location.href='/';">Home</a>
+      <a onclick="window.location.href='/projects';">Projects</a>
+      <a onclick="window.location.href='/contact';">Contact</a>
+      <input
+            class="topbuttons"
             type="image"
             src="/images/youtube.png"
-            width="45px"
-            height="45px"
+            width="30px"
+            height="30px"
             onclick="window.location.href='https://www.youtube.com/channel/UCJSOZJruvE_iP3PPfQzOHVA';"
         />
         <input
+            class="topbuttons"
             type="image"
             src="/images/twitter.png"
-            width="45px"
-            height="45px"
+            width="30px"
+            height="30px"
             onclick="window.location.href='https://twitter.com/Wafelkoira';"
         />
         <input
+            class="topbuttons"
             type="image"
             src="/images/twitch.png"
-            width="40px"
-            height="40px"
+            width="30px"
+            height="30px"
             onclick="window.location.href='https://twitch.tv/wafelkoira';"
         />
         <input
+            class="topbuttons"
             type="image"
             src="/images/discord.png"
-            width="45px"
-            height="45px"
+            width="30px"
+            height="30px"
             onclick="window.location.href='https://discord.gg/qyFgStvpZ4';"
         />
         <input
+            class="topbuttons"
             type="image"
             src="/images/itch.png"
-            width="40px"
-            height="40px"
+            width="30px"
+            height="30px"
             onclick="window.location.href='https://wafelkoira.itch.io';"
         />
     </div>  
 
-    <div class="parallax"></div>
+    <div style class="discription">
+      <h1 style="color: rgb(47, 53, 60);">About Me :)</h1>
 
-    <div
-      style="
-        height: 0 auto;
-        text-align: center;
-        width: 0 auto;
-        font-size: 24px;
-        margin: 0 auto;
-      "
-    >
-      <img class="center" width="200px" height="200px" src="/images/wafelnop.png" alt="My logo">
+      <img width="200px" height="200px" src="/images/wafelnop.png" alt="My logo">
 
-      <p>I am a solo indie game developer coding C# and messing around in Unity.</p>
-      <p>I am currently working on my latest game, Bulletkour.</p>
-      <p>I post content on YouTube as well... Things like devlogs and games!</p>
+      <p style="color: rgb(47, 53, 60);">I am a Indie game developer coding C# and messing around in Unity.</p>
+      <p style="color: rgb(47, 53, 60);">I am currently working on my latest game, Bulletkour.</p>
+      <p style="color: rgb(47, 53, 60);">I post content on YouTube too, stuff like devlogs and games!</p>
+      <button class="button" onclick="window.location.href='/projects'" type="button">Projects</button>
+      <button class="button" onclick="window.location.href='/contact'" type="button">Contact</button>
       <p>
         Also, check out my 
         <a href="/about" style="color: whitesmoke">Projects</a>, 
@@ -157,13 +191,11 @@
         <a href="/contact" style="color: whitesmoke">Contact</a> pages!
       </p>
     </div>
-
-    <div class="parallax"></div>
+    
 
     
 
   </body>
 
-  <div class="footer" style="color: whitesmoke">© 2020 - 2022 Wafelkoira. Site made purely of HTML and CSS. Games made purely of Unity and CSharp. :></div>
-
+  <div style="top: 719.99px;" class="footer" style="color: whitesmoke">© 2020 - 2022 Wafelkoira. Site made purely of HTML and CSS. Games made purely of Unity and CSharp. :></div>
 </html>
