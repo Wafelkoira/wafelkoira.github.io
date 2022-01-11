@@ -12,125 +12,12 @@
     <meta name="twitter:card" content="Official website for the game developer Wafelkoira.">
     <meta name="og:title" property="og:title" content="Wafelkoira | Indie Gamedev">
     <title>Wafelkoira | Indie Gamedev</title>
+    <script src="/scripts/localization.js"></script>
+    <link rel="stylesheet" href="/scripts/index.css">  
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-        body,
-        html {
-          height: 50%;
-        }
-  
-        h1 {
-            color: whitesmoke
-        }
-
-        p {
-            color: whitesmoke
-        }
-
-        .center {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-  
-        body {
-          font-family: "Ubuntu", serif;
-        }
-  
-        div {
-          color: whitesmoke;
-        }
-  
-        body {
-          background-color: whitesmoke;
-        }
-
-        .topnav {
-          background-color: rgb(47, 53, 60);
-          overflow: hidden;
-        }
-
-        .topnav a {
-          float: left;
-          color: whitesmoke;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 17px;
-        }
-
-        .topnav a:hover {
-          background-color: #ddd;
-          color: rgb(47, 53, 60);
-        }
-
-        .parallax {
-          background-image: url("/images/blockfall.png");
-
-          height: 90%;
-
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-
-        .footer {
-          position: absolute;
-          right: 0;
-          left: 0;
-          padding: 1rem;
-          text-align: center;
-        }
-
-        .topper {
-          position: absolute;
-          right: 0;
-          left: 0;
-          padding: 1rem;
-          background-color: rgb(47, 53, 60);
-          text-align: center;
-        }
-
-        .description {
-          position: absolute;
-          top: 50px;
-        }
-
-        .button {
-          background-color: rgb(159, 187, 247);
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          border: none;
-          transition-duration: 0.4s;
-          border-radius: 12px;
-        }
-
-        .button:hover {
-          background-color: whitesmoke;
-          color: rgb(47, 53, 60);
-        }
-
-        .topbuttons {
-          position: relative;
-          top: 10px;
-        }
-
-        .link:hover
-        {
-          background: rgba(47, 53, 60, 0.500);
-            
-        }
-
-      </style>
-
   </head>
 
   <body>
@@ -176,28 +63,28 @@
             height="30px"
             onclick="window.location.href='https://wafelkoira.itch.io';"
         />
+        <select data-i18n-switcher class="locale-switcher">
+          <option value="en">English</option>
+          <option value="es">Espanol</option>
+        </select>
     </div>  
 
     <div style="margin: auto;" class="description">
-      <h1 style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">About Me</h1>
+      <h1 data-i18n-key="about-me" style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">About Me</h1>
 
       <img style="margin-left: 100px; position: relative;" width="200px" height="200px" src="/images/wafelnop.png" alt="My logo">
 
-      <p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">I am a Indie game developer coding C# and messing around in Unity.</p>
-      <p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">I am currently working on my latest game, Bulletkour.</p>
+      <p data-i18n-key="i-am" style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">I am an Indie game developer coding C# and messing around in Unity.</p>
+      <p data-i18n-key="working-on" style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">I am currently working on my latest game, Bulletkour.</p>
       <a href="https://www.youtube.com/channel/UCJSOZJruvE_iP3PPfQzOHVA" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Youtube</p></a>
       <a href="https://twitter.com/Wafelkoira" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Twitter</p></a>
       <a href="https://twitch.tv/wafelkoira" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Twitch</p></a>
       <a href="https://discord.gg/qyFgStvpZ4" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Discord</p></a>
       <a href="https://wafelkoira.itch.io" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Itch.io</p></a>
-      <p style="text-align: right; color: rgb(47, 53, 60);" >If you wish to contact me, <strong><i>please</i></strong> do so through Discord.</p>
-      
+      <p data-i18n-key="contact" style="text-align: right; color: rgb(47, 53, 60);" >If you wish to contact me, please do so through Discord.</p>
     </div>
-    
-    <script src="js/scripts.js"></script>
-    
 
   </body>
 
-  <footer style="top: 700px;" style="color: rgb(47, 53, 60);" class="footer">© 2020 - 2022 Wafelkoira. Site made purely of HTML and CSS. Games made purely of Unity and CSharp. :></footer>
+  <footer data-i18n-key="copyright" style="top: 700px;" style="color: rgb(47, 53, 60);" class="footer">© 2020 - 2022 Wafelkoira. Site made purely of HTML and CSS. Games made purely of Unity and CSharp. :></footer>
 </html>
