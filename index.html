@@ -123,6 +123,12 @@
           top: 10px;
         }
 
+        .link:hover
+        {
+          background: rgba(47, 53, 60, 0.500);
+            
+        }
+
       </style>
 
   </head>
@@ -130,9 +136,6 @@
   <body>
 
     <div style="top: -20px;" class="topper" style="color: whitesmoke">
-      <a onclick="window.location.href='/';">Home</a>
-      <a onclick="window.location.href='/projects';">Projects</a>
-      <a onclick="window.location.href='/contact';">Contact</a>
       <input
             class="topbuttons"
             type="image"
@@ -175,25 +178,23 @@
         />
     </div>  
 
-    <div style class="description">
-      <h1 style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">About Me :)</h1>
+    <div style="margin: auto;" class="description">
+      <h1 style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">About Me</h1>
 
       <img style="margin-left: 100px; position: relative;" width="200px" height="200px" src="/images/wafelnop.png" alt="My logo">
 
       <p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">I am a Indie game developer coding C# and messing around in Unity.</p>
       <p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">I am currently working on my latest game, Bulletkour.</p>
-      <p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);">I post content on YouTube too, stuff like devlogs and games!</p>
-      <button style="margin-left: 100px; position: relative;" class="button" onclick="window.location.href='/projects'" type="button">Projects</button>
-      <button class="button" onclick="window.location.href='/contact'" type="button">Contact</button>
-      <p>
-        Also, check out my 
-        <a href="/about" style="color: whitesmoke">Projects</a>, 
-        <a href="/about" style="color: whitesmoke">About</a> and 
-        <a href="/contact" style="color: whitesmoke">Contact</a> pages!
-      </p>
+      <a href="https://www.youtube.com/channel/UCJSOZJruvE_iP3PPfQzOHVA" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Youtube</p></a>
+      <a href="https://twitter.com/Wafelkoira" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Twitter</p></a>
+      <a href="https://twitch.tv/wafelkoira" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Twitch</p></a>
+      <a href="https://discord.gg/qyFgStvpZ4" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Discord</p></a>
+      <a href="https://wafelkoira.itch.io" target="_blank"><p style="margin-left: 100px; position: relative; color: rgb(47, 53, 60);" class="link">Itch.io</p></a>
+      <p style="text-align: right; color: rgb(47, 53, 60);" >If you wish to contact me, <strong><i>please</i></strong> do so through Discord.</p>
+      
     </div>
     
-
+    <script src="js/scripts.js"></script>
     
 
   </body>

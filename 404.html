@@ -2,12 +2,15 @@
 <html>
 
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <html lang="en">
-    <meta name="Keywords" content="Wafelkoira, Unity, C#, Dani, Gamedev, Bulletkour, Solo gamdev, indie, game, gaming">
+    <meta name="Keywords" content="wafelkoira, wafelkoira.com, wafelkoira.github.io, code, coding, tutorial, Wafelkoira, Unity, C#, Dani, Gamedev, Bulletkour, Solo gamdev, indie, game, gaming">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official website for the game developer Wafelkoira.">
+    <meta name="twitter:card" content="Official website for the game developer Wafelkoira.">
+    <meta name="og:title" property="og:title" content="Wafelkoira | Indie Gamedev">
     <title>Wafelkoira | Indie Gamedev</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
@@ -36,20 +39,19 @@
   
         body {
           font-family: "Ubuntu", serif;
-
         }
   
         div {
-          color: white;
+          color: whitesmoke;
         }
   
         body {
-          background-color: rgb(47, 53, 60);
+          background-color: whitesmoke;
         }
 
         .topnav {
-        background-color: rgb(47, 53, 60);
-        overflow: hidden;
+          background-color: rgb(47, 53, 60);
+          overflow: hidden;
         }
 
         .topnav a {
@@ -69,7 +71,7 @@
         .parallax {
           background-image: url("/images/blockfall.png");
 
-          height: 150%;
+          height: 90%;
 
           background-attachment: fixed;
           background-position: center;
@@ -80,11 +82,51 @@
         .footer {
           position: absolute;
           right: 0;
-          bottom: 0;
+          left: 0;
+          padding: 1rem;
+          text-align: center;
+        }
+
+        .topper {
+          position: absolute;
+          right: 0;
           left: 0;
           padding: 1rem;
           background-color: rgb(47, 53, 60);
           text-align: center;
+        }
+
+        .description {
+          position: absolute;
+          top: 50px;
+        }
+
+        .button {
+          background-color: rgb(159, 187, 247);
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border: none;
+          transition-duration: 0.4s;
+          border-radius: 12px;
+        }
+
+        .button:hover {
+          background-color: whitesmoke;
+          color: rgb(47, 53, 60);
+        }
+
+        .topbuttons {
+          position: relative;
+          top: 10px;
+        }
+
+        .link:hover
+        {
+          background: rgba(47, 53, 60, 0.500);
+            
         }
 
       </style>
@@ -93,31 +135,58 @@
 
   <body>
 
-    <div class="parallax"></div>
+    <div style="top: -20px;" class="topper" style="color: whitesmoke">
+      <input
+            class="topbuttons"
+            type="image"
+            src="/images/youtube.png"
+            width="30px"
+            height="30px"
+            onclick="window.location.href='https://www.youtube.com/channel/UCJSOZJruvE_iP3PPfQzOHVA';"
+        />
+        <input
+            class="topbuttons"
+            type="image"
+            src="/images/twitter.png"
+            width="30px"
+            height="30px"
+            onclick="window.location.href='https://twitter.com/Wafelkoira';"
+        />
+        <input
+            class="topbuttons"
+            type="image"
+            src="/images/twitch.png"
+            width="30px"
+            height="30px"
+            onclick="window.location.href='https://twitch.tv/wafelkoira';"
+        />
+        <input
+            class="topbuttons"
+            type="image"
+            src="/images/discord.png"
+            width="30px"
+            height="30px"
+            onclick="window.location.href='https://discord.gg/qyFgStvpZ4';"
+        />
+        <input
+            class="topbuttons"
+            type="image"
+            src="/images/itch.png"
+            width="30px"
+            height="30px"
+            onclick="window.location.href='https://wafelkoira.itch.io';"
+        />
+    </div>  
 
-    <div
-      style="
-        height: 0 auto;
-        text-align: center;
-        width: 0 auto;
-        font-size: 24px;
-        margin: 0 auto;
-      "
-    >
-      <h1>Error 404... Oopsie...</h1> 
-      <p>Looks like you're on the wrong page...</p>
-      <p>
-        Click 
-        <a href="/" style="color: whitesmoke">here</a> to get unstuck...
-      </p>
+    <div style="margin: auto; text-align: center; position: relative;" class="description">
+      <h1 style="color: rgb(47, 53, 60);">Error 404... Oopsie...</h1>
+      <p style="color: rgb(47, 53, 60);"><strong>That's weird...</strong></p>
+      <img width="200px" height="200px" src="/images/thats_weird.jpeg" alt="Guess it's a skill issue ¯\_(ツ)_/¯">
+      <p></p>
+      <button class="button" onclick="window.location.href='/'" type="button">Homepage</button>
     </div>
-
-    <div class="parallax"></div>
-
-    
 
   </body>
 
-  <div class="footer" style="color: whitesmoke">© 2020 - 2022 Wafelkoira. Site made purely of HTML and CSS. Games made purely of Unity and CSharp. :></div>
-
+  <footer style="top: 700px;" style="color: rgb(47, 53, 60);" class="footer">© 2020 - 2022 Wafelkoira. Site made purely of HTML and CSS. Games made purely of Unity and CSharp. :></footer>
 </html>
