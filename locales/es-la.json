@@ -1,3 +1,7 @@
 {
-    "test": "spanish"
+    "about-me": "Acerca de mí",
+    "i-am": "Soy un desarrollador de juegos independiente que codifica C# y me meto en Unity.",
+    "working-on": "Actualmente estoy trabajando en mi último juego, Bulletkour.",
+    "contact": "Si desea contactarme, por favor hágalo a través de Discord.",
+    "copyright": "© 2020 - 2022 Wafelkoira. Sitio hecho puramente de HTML y CSS. Juegos hechos puramente de Unity y C#. :> "
 }
