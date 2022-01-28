@@ -12,7 +12,7 @@
     <meta name="twitter:card" content="Official website for the game developer Wafelkoira.">
     <meta name="og:title" property="og:title" content="Wafelkoira | Indie Gamedev">
     <title>Wafelkoira | Indie Gamedev</title>
-    <script src="/scripts/localization.js"></script>
+    <script src="/localization.js"></script>
     <link rel="stylesheet" href="/scripts/index.css">  
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
@@ -63,7 +63,7 @@
             height="30px"
             onclick="window.location.href='https://wafelkoira.itch.io';"
         />
-        <select data-i18n-switcher class="locale-switcher">
+        <select id="switcher" data-i18n-switcher class="locale-switcher">
           <option value="en">English</option>
           <option value="es">Español ES</option>
           <option value="es-la">Español LA</option>
@@ -107,3 +107,11 @@
 
   <footer data-i18n-key="copyright" style="top: 700px;" style="color: rgb(47, 53, 60);" class="footer">© 2020 - 2022 Wafelkoira. Site made purely of HTML and CSS. Games made purely of Unity and CSharp. :></footer>
 </html>
+<script>
+      document.getElementById("switcher").addEventListener("change",function(){
+      var e = document.getElementById("switcher");
+      var lang = e.value;
+      localStorage.setItem('currentLang', JSON.stringify(lang));
+      console.log(lang)
+  })
+</script>
